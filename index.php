@@ -13,7 +13,7 @@ if (isset($_POST["username"])) {
             if (password_verify($password, $row["password"])) {
                 session_start();
                 $_SESSION["username"] = $username;
-                header("Location: tienda.php");
+                header("Location: tienda");
             } else {
                 $error = "Usuario o contraseña incorrectos";
             }
