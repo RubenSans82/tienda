@@ -1,0 +1,28 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 50px
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+form input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+@media (max-width: 768px){
+    form{
+        width: 100%;
+    }
+}
