@@ -65,6 +65,12 @@ $result = $conexion->query($sql);
             </div>
             <div>
                 <h3>Nuevo teléfono</h3>
+                <form action="nuevo_telefono.php" method="post">
+                    <input type="hidden" name="idproveedor" value="<?php echo $_GET["id"] ?>">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" required placeholder="Teléfono">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
             </div>
 
         </div>
