@@ -23,7 +23,7 @@ $result = $conexion->query($sql);
                     echo "<td>" . $fila['id'] . "</td>";
                     echo "<td>" . $fila['nombre'] . "</td>";
                     echo "<td>" . $fila['web'] . "</td>";
-                    echo "<td><a href='editar_proveedor.php?id=" . $fila['id'] . "'>Editar</a> | <a href='eliminar_proveedor.php?id=" . $fila['id'] . "'>Eliminar</a></td>";
+                    echo "<td><a href='editar_proveedor.php?id=" . $fila['id'] . "'>Editar</a> | <a href='eliminar_proveedor.php?id=" . $fila['id'] . "'>Eliminar</a> | <a href='proveedores?id=" . $fila['id'] . "'>Añadir</a> | <a href='proveedor?id=" . $fila['id'] . "'>Ver</a></td>";
                     echo "</tr>";
                 }
                 ?>
@@ -67,13 +67,15 @@ $result = $conexion->query($sql);
                 <h3>Nuevo teléfono</h3>
                 <form action="nuevo_telefono.php" method="post">
                     <input type="hidden" name="idproveedor" value="<?php echo $_GET["id"] ?>">
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" name="telefono" id="telefono" required placeholder="Teléfono">
+                    <label for="numero">Teléfono</label>
+                    <input type="text" name="numero" id="numero" required placeholder="Teléfono">
                     <input type="submit" value="Guardar">
                     <input type="reset" value="Cancelar">
+                </form>
             </div>
 
         </div>
+        <a href="proveedores">Volver</a>
         <?php } ?>
       
     </div>

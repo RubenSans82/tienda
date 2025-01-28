@@ -5,6 +5,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(4, 41, 250);
 }
 header i{
     font-size: 30px;
@@ -17,6 +18,8 @@ header i{
 main{
     display: flex;
     flex-wrap: nowrap;
+    background-color: rgb(203, 211, 255);
+
 }
 main aside{
     width: 30%;
@@ -24,6 +27,19 @@ main aside{
 main section{
     width: 70%;
     
+}
+
+.listado{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        
+}
+
+aside {
+    background-color: rgb(71, 99, 255);
+    padding: 20px;
 }
 
 aside ul {
@@ -42,4 +58,11 @@ aside ul li i{
     display: flex;
     justify-content: space-between;
  
+}
+
+footer{
+    background-color: rgb(4, 41, 250);
+    color: white;
+    text-align: right;
+    padding-right: 20px;
 }
