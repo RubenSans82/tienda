@@ -7,7 +7,7 @@ $result = $conexion->query($sql);
 <section>
     <div class="listado">
         <h1>Proveedores</h1>
-        <table class="table table-striped">
+        <div id="tabla">        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -28,7 +28,8 @@ $result = $conexion->query($sql);
                 }
                 ?>
             </tbody>
-        </table>
+        </table></div>
+
         <hr>
         <h3>Nuevo Proveedor</h3>
         <form action="nuevo_proveedor.php" method="post">
